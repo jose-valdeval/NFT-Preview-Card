@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: hsl(217, 54%, 11%);
+	color: hsl(215, 51%, 70%);
+	font-size: 18px;
+	font-family: 'Outfit', sans-serif;
+}
+.container_all{
+	width: 350px;
+	padding: 20px;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 15px;
+}
+.container_image{
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+.container_image img{
+	width: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.icon_view{
+	display: none;
+	position: absolute;
+	padding: 40%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: hsl(178, 100%, 50%, 0.5);
+	pointer-events: none;
+}
+.Equilibrium:hover ~ .icon_view{
+	display: block;
+}
+.title, .description, .container_amount_time{
+	margin: 20px 0;
+}
+.title{
+	color: hsl(0, 0%, 100%);
+	font-size: 24px;
+	font-weight: 600;
+}
+.description{
+	font-weight: 300;
+	line-height: 30px;
+}
+.container_amount_time{
+	display: flex;
+	justify-content: space-between;
+}
+.container_amount_time img{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.time{
+	top: 45%;
+}
+.amount, .time, .creator{
+	font-weight: 400;
+}
+.container_amount_time .amount{
+	color: hsl(178, 100%, 50%);
+}
+.creator{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	border-top: 2px solid hsl(215, 32%, 27%);
+	font-size: 17px;
+}
+.creator .creator_avatar{
+	width: 35px;
+	margin-right: 15px;
+	border: 2px solid hsl(0, 0%, 100%);
+	border-radius: 50%;
+}
+.creator .creator_name, .title{
+	color: hsl(0, 0%, 100%);
+}
+.creator .creator_name:hover, .title:hover{
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
